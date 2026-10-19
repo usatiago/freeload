@@ -1,0 +1,39 @@
+{
+  "name": "SetLog",
+  "type": "object",
+  "properties": {
+    "session_id": {
+      "type": "string"
+    },
+    "exercise_id": {
+      "type": "string"
+    },
+    "exercise_name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "performed_at": {
+      "type": "string"
+    },
+    "week_key": {
+      "type": "string"
+    },
+    "reps": {
+      "type": "number"
+    },
+    "weight": {
+      "type": "number"
+    },
+    "minutes": {
+      "type": "number"
+    },
+    "distance": {
+      "type": "number"
+    },
+    "volume": {
+      "type": "number"
+    }
+  }
+}

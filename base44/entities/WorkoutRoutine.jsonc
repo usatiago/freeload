@@ -1,0 +1,47 @@
+{
+  "name": "WorkoutRoutine",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "exercises": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "exercise_id": {
+            "type": "string"
+          },
+          "exercise_name": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "target_sets": {
+            "type": "number"
+          },
+          "target_reps": {
+            "type": "number"
+          },
+          "target_weight": {
+            "type": "number"
+          },
+          "target_minutes": {
+            "type": "number"
+          },
+          "target_distance": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

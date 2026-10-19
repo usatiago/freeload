@@ -1,0 +1,31 @@
+{
+  "name": "Exercise",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "strength",
+        "cardio",
+        "mobility"
+      ],
+      "default": "strength"
+    },
+    "muscle_group": {
+      "type": "string"
+    },
+    "equipment": {
+      "type": "string"
+    },
+    "is_custom": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

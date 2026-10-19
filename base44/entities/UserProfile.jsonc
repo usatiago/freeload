@@ -1,0 +1,28 @@
+{
+  "name": "UserProfile",
+  "type": "object",
+  "properties": {
+    "height_cm": {
+      "type": "number"
+    },
+    "weight_kg": {
+      "type": "number"
+    },
+    "birth_date": {
+      "type": "string"
+    },
+    "units": {
+      "type": "string",
+      "enum": [
+        "metric",
+        "imperial"
+      ],
+      "default": "imperial"
+    },
+    "google_health_enabled": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": []
+}

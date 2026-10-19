@@ -1,0 +1,87 @@
+{
+  "name": "WorkoutSession",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "routine_id": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "in_progress",
+        "completed"
+      ],
+      "default": "in_progress"
+    },
+    "started_at": {
+      "type": "string"
+    },
+    "completed_at": {
+      "type": "string"
+    },
+    "duration_seconds": {
+      "type": "number"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "total_volume": {
+      "type": "number"
+    },
+    "total_sets": {
+      "type": "number"
+    },
+    "exercise_count": {
+      "type": "number"
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "exercise_id": {
+            "type": "string"
+          },
+          "exercise_name": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "sets": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "reps": {
+                  "type": "number"
+                },
+                "weight": {
+                  "type": "number"
+                },
+                "minutes": {
+                  "type": "number"
+                },
+                "distance": {
+                  "type": "number"
+                },
+                "done": {
+                  "type": "boolean"
+                },
+                "planned": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "status"
+  ]
+}
